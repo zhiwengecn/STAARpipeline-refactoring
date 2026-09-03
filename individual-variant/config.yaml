@@ -1,0 +1,53 @@
+# config
+paths:
+  r_script: "/pathto/2_Single_p2_gzw.r"
+  adgs: "/pathto/agds_dir.Rdata"
+  null_model: "pathto/obj_nullmodel_ventricles.Rdata"
+  jobs: "/pathto/jobs_num.Rdata"
+  out_prefix: "/pathto/output/"
+  p1_path: "/pathto/STEP_2/P1/stable/"
+  p2_path: "/pathto/STEP_2/P2/stable/"
+  meta_summary: "/pathto/STEP_2/P1/stable/Analysis_Meta_Summary.txt"
+  log_root: "/pathto/logs/stable/"
+
+tasks:
+  - array_id: 27
+    save_chunk_size: 100
+    kk_start: 1
+    kk_end: 100
+  - array_id: 27
+    save_chunk_size: 100
+    kk_start: 101
+    kk_end: 200
+  - array_id: 27
+    save_chunk_size: 100
+    kk_start: 201
+    kk_end: 300
+  - array_id: 27
+    save_chunk_size: 100
+    kk_start: 301
+    kk_end: 400
+  - array_id: 27
+    save_chunk_size: 100
+    kk_start: 401
+    kk_end: 500
+  - array_id: 27
+    save_chunk_size: 100
+    kk_start: 501
+    kk_end: 600
+  - array_id: 27
+    save_chunk_size: 100
+    kk_start: 601
+    kk_end: 700
+  - array_id: 27
+    save_chunk_size: 100
+    kk_start: 701
+    kk_end: 800
+  - array_id: 27
+    save_chunk_size: 100
+    kk_start: 801
+    kk_end: 850
+
+execution:
+  max_concurrent_jobs: 1
+  dry_run: false

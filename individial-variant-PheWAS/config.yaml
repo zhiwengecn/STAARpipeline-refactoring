@@ -1,0 +1,23 @@
+paths:
+  r_script: "/pathto/stable/Step2_p2.r"
+  jobs_path: "/pathto/jobs_num.Rdata"
+  pheno_path: "/pathto/disease/"
+  step1_path: "/pathto/STEP_1/"
+  out_path: "/pathto/STEP_2/stable/"
+  step2_1_path: "/pathto/STEP_2/stable/step2.1/"
+  step2_2_path: "/pathto/STEP_2/stable/step2.2/"
+  log_root: "r_task_logs_kk"
+
+tasks:
+  - begin: 141
+    end: 142
+    stage: "train"
+    arrayid: 25
+  - begin: 142
+    end: 145
+    stage: "train"
+    arrayid: 25
+
+execution: 
+  max_concurrent_jobs: 8
+  dry_run: false
